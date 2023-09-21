@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap');
+:root {
+  --primary-color: #D1884F;
+  --secondary-color: #008AAA;
+  --accent-color: #3BBADB;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+body{
+  overflow: auto;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  background-color: var();
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin-right: 20px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #010101;
+  font-size: 16px;
+}
+
+.nav-items li a:hover {
+  color: var(--accent-color);
+}
+
+ 
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: calc(100%-150px);
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+  overflow: hidden;
+}
+
+ 
+.col0{
+  width: 70%;
+  z-index: 1;
+}
+.col0 a{
+  color: #0389A5;
+  text-decoration: none;
+}
+.topline{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: var(--accent-color);
+}
+
+h1{
+  display: block;
+  font-size: 2em;
+  color: var(--secondary-color);
+  font-weight: 900px;
+}
+h1 b{
+  color: #CF8757;
+}
+
+p{
+  display: block;
+  width: 90%;
+  color: #000000;
+  font-size: 1.5em;
+}
+.btn{
+  width: 100%;
+  position: relative;
+  left: 15px;
+}
+button{
+  outline:var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--accent-color);
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0,0 ,0.4);
+}
+button:hover{
+  background-color: #0389A5;
+  color: #fff;
+}
+.imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox img{
+  border-radius: 0px 0px 0px 200px;
+  position: relative;
+  height: 80%;
+  width: calc(130%-80px);
+  top: 20px;
+  right: -150px;
+
+}
+
+.imgbox img::before{
+  content: "";
+  background-color: #0389A5;
+  border-radius: 0px 0px 0px 200px;
+}
+
+
+footer {
+  background-color: var(--accent-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
